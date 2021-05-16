@@ -1,18 +1,20 @@
 {
-  "name": "sequelize-iseed",
-  "version": "1.0.2",
+  "name": "sequeliseed",
+  "version": "1.0.0",
   "description": "Generate Seeder files from the data in the tables. ",
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tharindu Thisarasinghe <hello@coderaweso.me> (https://coderaweso.me)",
   "license": "ISC",
   "dependencies": {
+    "commander": "^7.2.0",
     "ejs": "^3.1.6",
     "fs-extra": "^10.0.0",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.6.2",
-    "yargs-parser": "^20.2.7"
+    "sequelize": "^6.6.2"
   }
 }
