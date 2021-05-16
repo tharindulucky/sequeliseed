@@ -2,13 +2,17 @@
 const program = require('commander');
 
 const filesMgmt = require('./lib/files');
-const generate = require('./lib/generate');
+const query = require('./lib/database/query');
 
-async function run() {
-    console.log("Generating iSeeds...");
-    const path = await filesMgmt.createDir();
-    await generate.generateSeederCode();
-    console.log("iSeeds Generated Successfully!");
+async function run(table = null) {
+    try{
+        console.log('\x1b[36m%s\x1b[0m',"Generating seeds...");
+        const path = await filesMgmt.createDir();
+        await query.runQueries(table);
+    }catch(err){
+        throw err;
+    }
+    
 }
 
 
@@ -18,10 +22,10 @@ program
 .description("Generate Seeder files from the data in the tables. ");
 
 program
-.command('generate <tablename>')
+.command('generate <tablenames...>')
 .description('Generate a single seeder file from the specified table')
-.action(async () => {
-    await run();
+.action(async (tablename) => {
+    await run(tablename);
 });
 
 program.parse(process.argv);
