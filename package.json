@@ -1,0 +1,11 @@
+{
+  "name": "sequelize-iseed",
+  "version": "1.0.1",
+  "description": "Generate Seeder files from the data in the tables. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tharindu Thisarasinghe <hello@coderaweso.me> (https://coderaweso.me)",
+  "license": "ISC"
+}
