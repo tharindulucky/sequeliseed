@@ -7,9 +7,8 @@ const generate = require('./lib/generate');
 async function run() {
     console.log("Generating iSeeds...");
     const path = await filesMgmt.createDir();
-    await filesMgmt.generateSeedFiles(path);
     await generate.generateSeederCode();
-    console.log("iSeeds Generated Successfully");
+    console.log("iSeeds Generated Successfully!");
 }
 
 
