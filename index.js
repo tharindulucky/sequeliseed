@@ -2,16 +2,16 @@
 const program = require('commander');
 
 const filesMgmt = require('./lib/files');
-const database = require('./lib/database');
+const query = require('./lib/database/query');
 
 async function run(table = null) {
     console.log('\x1b[36m%s\x1b[0m',"Generating seeds...");
     const path = await filesMgmt.createDir();
 
     if(table !== null){
-        await database.readTable();
+        await query.readTable();
     }else{
-        await database.readAllTables();
+        await query.readAllTables();
     }
     console.log('\x1b[32m%s\x1b[0m',"Seeds Generated Successfully!");
     
