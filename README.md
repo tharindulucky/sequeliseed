@@ -1,4 +1,4 @@
-**Sequeliseed** is an inverse seed package that allows you to generate seeds from the data in existing database tables.
+**Sequeliseed** is an inverse seed package that allows you to generate seeds from existing data in database tables.
 
 **Note: This package currently supports [Sequelize](https://github.com/sequelize/sequelize/) ORM only.**
 
