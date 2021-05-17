@@ -1,6 +1,6 @@
 {
   "name": "sequeliseed",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate inverse Seeder files from the existing data in the tables. ",
   "main": "index.js",
   "preferGlobal": true,
