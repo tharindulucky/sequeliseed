@@ -1,10 +1,7 @@
-<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/sequeliseed">
-
-<img alt="npm" src="https://img.shields.io/npm/v/sequeliseed">
-
-<img alt="npm" src="https://img.shields.io/npm/dw/sequeliseed">
-
-<img alt="NPM" src="https://img.shields.io/npm/l/sequeliseed">
+[![npm version](https://badgen.net/npm/v/sequeliseed)](https://www.npmjs.com/package/sequeliseed)
+[![npm downloads](https://badgen.net/npm/dm/sequeliseed)](https://www.npmjs.com/package/sequeliseed)
+[![Merged PRs](https://badgen.net/github/merged-prs/tharindulucky/sequeliseed)](https://github.com/tharindulucky/sequeliseed)
+[![license](https://badgen.net/github/license/tharindulucky/sequeliseed)](https://badgen.net/github/license/tharindulucky/sequeliseed)
 
 **Sequeliseed** is an inverse seed package that allows you to generate seeds from existing data in database tables.
 
