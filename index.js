@@ -23,7 +23,7 @@ program
 
 program
 .command('generate <tablenames...>')
-.description('Generate a single seeder file from the specified table')
+.description('Generate seeder file(s) from specified table(s). Add tables seperated by a space.')
 .action(async (tablename) => {
     await run(tablename);
 });
