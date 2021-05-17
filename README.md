@@ -1,3 +1,11 @@
+<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/sequeliseed">
+
+<img alt="npm" src="https://img.shields.io/npm/v/sequeliseed">
+
+<img alt="npm" src="https://img.shields.io/npm/dw/sequeliseed">
+
+<img alt="NPM" src="https://img.shields.io/npm/l/sequeliseed">
+
 **Sequeliseed** is an inverse seed package that allows you to generate seeds from existing data in database tables.
 
 **Note: This package currently supports [Sequelize](https://github.com/sequelize/sequelize/) ORM only.**
