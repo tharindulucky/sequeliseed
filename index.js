@@ -16,11 +16,9 @@ async function run(table, options = null, answers) {
         await filesMgmt.createDir();
         await query.runQueries(table, options);
     }catch(err){
-        throw err;
+        helpers.showLog('error', err.message);
     }
 }
-
-
 
 program
 .version("1.0.0")
