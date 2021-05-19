@@ -38,10 +38,22 @@ Add as many as table names seperated by a space.
 You can pass this optional parameter to specify the current environment of your project. The default environment is `development`.
 
 ```
-$ sequeliseed generate table1_name --env development
+$ sequeliseed generate table_name --env development
 ```
 
 Make sure the particular environment is defined in `config.json` file in your [Sequelize](https://github.com/sequelize/sequelize/) installation.
+
+**Manual database configurations**
+
+If you have altered the default `config.json` file of your **Sequelize** installation, [Sequeliseed](https://www.npmjs.com/package/sequeliseed) won't be able to read the database configurations.
+
+So, in that case, you have to manually enter database credentials on the CLI.
+
+Add this `--config` option at the end of the command. And then it'll prompt for certain database credentials.
+
+```
+$ sequeliseed generate table_name --config
+```
 
 ## 3. Compatibility
 
