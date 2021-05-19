@@ -1,0 +1,32 @@
+{
+    "prompts":{
+        "configs":[
+            {
+                "type":"list",
+                "choices":["mysql","postgres", "mariadb", "sqlite", "mssql"],
+                "name":"dialect",
+                "message": "Database connection: "
+            },
+            {
+                "type":"input",
+                "name":"host",
+                "message": "Database host: "
+            },
+            {
+                "type":"input",
+                "name":"username",
+                "message": "Database username: "
+            },
+            {
+                "type":"input",
+                "name":"password",
+                "message": "Database password: "
+            },
+            {
+                "type":"input",
+                "name":"database",
+                "message": "Database name: "
+            }
+        ]
+    }
+}
