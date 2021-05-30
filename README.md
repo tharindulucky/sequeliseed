@@ -22,13 +22,13 @@ The usage is pretty straightforward. [Sequeliseed](https://www.npmjs.com/package
 **To generate a single seeder from a single table:**
 
 ```
-$ sequeliseed generate table_name
+$ npx sequeliseed generate table_name
 ```
 
 **To generate multiple seeders from a multiple tables:**
 
 ```
-$ sequeliseed generate table1_name table2_name table3_name
+$ npx sequeliseed generate table1_name table2_name table3_name
 ```
 
 Add as many as table names seperated by a space.
@@ -38,7 +38,7 @@ Add as many as table names seperated by a space.
 You can pass this optional parameter to specify the current environment of your project. The default environment is `development`.
 
 ```
-$ sequeliseed generate table_name --env development
+$ npx sequeliseed generate table_name --env development
 ```
 
 Make sure the particular environment is defined in `config.json` file in your [Sequelize](https://github.com/sequelize/sequelize/) installation.
@@ -52,7 +52,7 @@ So, in that case, you have to manually enter database credentials on the CLI.
 Add this `--config` option at the end of the command. And then it'll prompt for certain database credentials.
 
 ```
-$ sequeliseed generate table_name --config
+$ npx sequeliseed generate table_name --config
 ```
 
 ## 3. Compatibility
